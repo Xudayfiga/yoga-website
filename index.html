@@ -1,0 +1,3850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="TW.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwri~te+AU+NSW:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: "Roboto", sans-serif;
+            }
+            
+            .head-mobile {
+                display: none;
+            }
+            
+            .table-info-guudi-tab {
+                display: none;
+            }
+            
+            .table-info-guud-mobile {
+                display: none;
+            }
+            
+            .dhabi-table-tab {
+                display: none;
+            }
+            
+            .profile-tab {
+                display: none;
+            }
+            
+            .table-info-guud-t {
+                display: none;
+            }
+            
+            .table-info-guud-mobi {
+                display: none;
+            }
+            
+            .dhab-table-tab {
+                display: none;
+            }
+            
+            .form-tab {
+                display: none;
+            }
+            
+            .grid-map-tab {
+                display: none;
+            }
+            
+            .info-tab {
+                display: none;
+            }
+            
+            .midaw-tab {
+                display: none;
+            
+            }
+            
+            .info-tab body {
+                font-family: "Roboto", sans-serif;
+            }
+            
+            
+            li {
+                list-style: none;
+            }
+            
+            .info-tab h2 {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+            }
+            
+            #btns {
+                cursor: pointer;
+            
+            }
+            
+            
+            #btn {
+                cursor: pointer;
+            }
+            
+            #white {
+                color: transparent;
+            }
+            .menu-link li{
+                color: rgb(204, 41, 41);
+            
+            }
+            .Menu-link li{
+                background-color: #ffffff;
+                border-radius: 0.15rem;
+            
+            }
+            
+            
+            .cont {
+                width: min(90%, 1120px);
+                margin-inline: auto;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            
+            #white {
+                color: rgb(0, 0, 0);
+            }
+            
+            p {
+                font-weight: 341;
+                color: #858484;
+                margin-block: 0.25rem;
+                font-size: 15px;
+            }
+            
+            header {
+                width: 100%;
+                height: 4.5rem;
+                background-color: #ffffff47;
+                position: sticky;
+                top: 0;
+            
+            }
+            
+            .d-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 1rem;
+            
+            }
+            
+            .three span {
+                color: #ed3818;
+            }
+            
+            .three {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 7rem;
+                margin-bottom: 3rem;
+                width: 100%;
+            }
+            
+            .three img {
+                margin-block: 0.5rem;
+            
+            }
+            
+            .three h2 {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            
+            /*  */
+            .hero-top {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                display: flex;
+            }
+            
+            .info-video {
+            
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                z-index: 1;
+            }
+            
+            .v-hero {
+                position: absolute;
+                top: 0;
+                
+                z-index: -1;
+                object-fit: cover;
+                min-width: 100%;
+                height: 100%;
+            }
+            
+            .info-video h3 {
+                text-transform: uppercase;
+                font-size: 1.95rem;
+                font-weight: 701;
+            }
+            
+            .info-video h1 {
+                text-transform: uppercase;
+                font-size: 3.55rem;
+                font-weight: 801;
+            }
+            
+            .overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.3);
+                z-index: 0;
+            }
+            
+            
+            .left-menu li {
+            
+                list-style: none;
+            }
+            
+            .left-menu li a {
+                text-decoration: none;
+            }
+            
+            .left-menu {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 2.5rem;
+                text-align: center;
+            
+            }
+            
+            #home {
+                color: #ee664e;
+            }
+            
+            a {
+                text-transform: uppercase;
+            
+            }
+            
+            .d-menu h1 {
+                text-transform: uppercase;
+            
+            }
+            
+            .d-menu h1 span {
+                color: #f26147;
+            }
+            
+            #btn {
+                background-color: #f26147;
+                color: rgb(255, 255, 255);
+                padding: 11px;
+            }
+            
+            #btns {
+                background-color: #d04932;
+                padding: 15px;
+                border: .3px solid rgba(255, 255, 255, 0);
+                color: white;
+                text-transform: uppercase;
+                margin-top: 1.5rem;
+                font-size: 1rem;
+                font-weight: 600;
+            
+            }
+            
+            .hero video {
+                width: 100%;
+                height: 21rem;
+            
+            }
+            .info-video h3, h1{
+                color: white;
+            }
+            .info-video h1 span{
+                color: #d04932;
+            }
+            
+            .three-cont {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            
+            
+            /*  */
+            .sec-infobox {
+                display: flex;
+                gap: 5rem;
+            
+                justify-content: center;
+                align-items: center;
+                margin-block: 1.9rem;
+                width: 100%;
+            }
+            
+            .box {
+                display: flex;
+                gap: 1rem;
+                margin-block: 1rem;
+            }
+            
+            .gmob-diyaarad {
+                display: none;
+            }
+            
+            .box-info p {
+                margin-block: 0.5rem;
+                font-size: 13px;
+                font-weight: 371;
+            }
+            
+            .exp-cont h1 span {
+                color: #d04932;
+            }
+            
+            .exp-cont h1 {
+                margin-block: 0.35rem;
+                font-weight: 700;
+            }
+            
+            .exp-cont img {
+                margin-bottom: 0.5rem;
+            }
+            
+            .box-info a {
+                color: #ed3818;
+                font-size: 12.7px;
+            }
+            
+            .box-info h3 {
+                font-size: 16.5px;
+                font-weight: 550;
+                color: #232d3a;
+            }
+            
+            
+            
+            
+            .diyaarad {
+                background-image: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: auto;
+                padding-block: 1rem;
+                width: 100%
+            }
+            
+            
+            
+            .info-diyaarad h1 {
+                font-size: 3rem;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 700;
+            }
+            
+            
+            .info-diyaarad p {
+                color: rgb(239, 239, 239);
+                font-size: 0.85rem;
+                font-weight: 400;
+                margin-top: 0.7rem;
+            
+            }
+            
+            .info-diyaarad h1 span {
+                color: #ed3818;
+            }
+            
+            .info-diyaarad button {
+                margin-bottom: 0.5rem;
+            }
+            
+            .info-diyaarad {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                padding-top: 5rem;
+            }
+            
+            
+            .after-plane {
+                display: flex;
+                flex-direction: column;
+                margin-block: 1.5rem;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                justify-items: flex-start;
+                gap: 0.35rem;
+                margin-top: 5rem;
+                margin-bottom: 4rem;
+            
+            
+            
+            }
+            
+            .after-plane span {
+                color: #d04932;
+            }
+            
+            .after-plane h1 {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: 800;
+            }
+            
+            .after-plane img {
+                padding-block: 0.3rem;
+            }
+            
+            
+            .our .cont h1 span,
+            .exp h1 span {
+                color: #d04932;
+            
+            }
+            
+            .first-train {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2.5rem;
+                width: 57rem;
+                margin-block: 1rem;
+            }
+            
+            #img-boxs-l {
+                width: 31rem;
+            
+                height: 17rem;
+                margin-top: 1rem;
+            }
+            
+            .box-right h2 {
+                color: #232d3a;
+                margin-top: 0.75rem;
+                font-size: 19px;
+            }
+            
+            .box-right p {
+                font-size: 13px;
+                margin-top: 0.75rem;
+                margin-bottom: 0rem;
+            }
+            
+            .btn-train-des {
+                font-size: 13px;
+                margin-bottom: 1rem;
+                border-radius: 5px;
+            }
+            
+            .first-train-mob {
+                display: none;
+            }
+            
+            
+            .boxs-l {
+            
+                display: flex;
+                padding: 10px;
+                margin: 1rem;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: start;
+                width: 100%;
+                height: 7rem;
+                box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.176);
+            
+            
+            }
+            
+            .boxs-l a {
+                color: #000000c9;
+                text-transform: capitalize;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            
+            #first {
+                color: #df3011;
+            }
+            
+            .boxs-card {
+                width: 100%;
+                gap: 1rem;
+            
+            
+            }
+            
+            .boxs-l img {
+                padding: 1rem;
+            }
+            
+            
+            /*  */
+            
+            .footers {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                margin-block: 1rem;
+            }
+            
+            .footers span {
+                color: #ed6a52;
+            }
+            
+            /*  */
+            
+            
+            .exp-cont {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 0.25rem;
+                margin-block: 3.3rem;
+            }
+            
+            .exp-cont h1 {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: 800;
+            }
+            
+            .table-info-guud {
+                width: 100%;
+                background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
+                height: 39.5rem;
+                flex-wrap: wrap;
+                display: flex;
+            }
+            
+            .table-info-guud h2 {
+                color: white;
+            
+            }
+            
+            .table-info-guud p {
+                color: white;
+            
+            }
+            
+            .table-info-guud .days {
+                color: white;
+            }
+            
+            .table-info-guud h2 span {
+                color: #df5d46;
+            }
+            
+            .table-info-guud h2 {
+                margin-block: 0.5rem;
+            }
+            
+            .table-info-guud .dhab-tabl th {
+                padding: 1.5rem;
+            }
+            
+            
+            .table-info-guud .dhab-tabl td {
+                padding: 1.5rem;
+            }
+            
+            .table-info-guud p {
+                margin-bottom: 0.5rem;
+            }
+            
+            .info-table {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-block: 1rem;
+            }
+            
+            .dhab-tabl {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                width: 100%;
+            }
+            
+            .dhab-tabl table {
+                margin-bottom: 3rem;
+                color: white;
+            }
+            
+            .dhab-tabl table th {
+                padding: 7px;
+            }
+            
+            .dhab-tabl table td {
+                padding: 7px;
+            
+            }
+            
+            
+            .diiwaan {
+            
+                grid-column: 1fr;
+                background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg);
+                width: 100vh;
+                z-index: 1;
+            
+            }
+            
+            
+            
+            .grid-map {
+                width: 100%;
+                margin-top: 3rem;
+                z-index: -1;
+                display: flex;
+                flex-direction: row;
+                /* gap: 3rem; */
+                justify-content: center;
+                align-items: center;
+            
+            
+            }
+            
+            .map {
+                width: 100%;
+                height: 30rem;
+            
+            }
+            
+            .map iframe {
+                width: 100%;
+                gap: 31rem;
+                height: 100%;
+            
+            }
+            
+            
+            
+            .fifty-input {
+                width: 47.5%;
+                display: inline;
+            }
+            
+            .fifty-input2 {
+                width: 50.7%;
+            
+            }
+            
+            .fifty {
+                padding: 0.45rem;
+            }
+            
+            
+            .boqoley {
+                width: 98.7%;
+                padding: .7rem;
+                margin-top: 0.3rem;
+                border: 1.5px solid rgb(255, 255, 255);
+            }
+            
+            .form-cont {
+                padding: 2.1rem;
+                width: 99%;
+                display: i;
+            }
+            
+            .padding-input {
+                margin-top: 1rem;
+            }
+            
+            .foot {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-block: 1.3rem;
+            }
+            
+            .foot p {
+                color: #000000d7;
+            }
+            
+            .footer-span {
+                color: #f74626;
+            }
+            
+            
+            
+            
+            .profile {
+                background-color: #ffffff56;
+                width: 75%;
+                margin-block: 4.3rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1.7rem;
+                justify-content: center;
+                align-items: center;
+                text-align: start;
+                flex-wrap: wrap;
+            
+            
+            }
+            
+            .profile img {
+                width: 100%;
+                height: 271px;
+                border-radius: 5px;
+            
+            
+            }
+            
+            .role-profile {
+                background-color: #fff;
+                padding: 15px;
+                box-shadow: 0px 0px 11px rgba(45, 24, 24, 0.553);
+                border-radius: 0.3rem;
+                margin: 0.65rem;
+            
+            }
+            
+            .role-profile h5 {
+                font-size: 14px;
+                font-weight: 500;
+            }
+            
+            .role-profile h3 {
+                margin-bottom: 1rem;
+                color: #232d3a;
+                font-size: 17px;
+                font-weight: 600;
+            }
+            
+            .role-profile p {
+                font-size: 14.1px;
+                font-weight: 400;
+            }
+            
+            .social {
+                margin-block: 1rem;
+                cursor: pointer;
+            
+            }
+            
+            .social i {
+                color: #000000;
+            }
+            
+            
+            
+            .a-prof {
+                color: #f15135;
+                margin-block: 1rem;
+            }
+            
+            .head-mob {
+                display: none;
+            }
+            
+            .d-menu-mob {
+                display: inline;
+            }
+            
+            .hero-mob,
+            .three-mob {
+                display: none;
+            }
+            
+            .sec-infobox-mob {
+            
+                display: none;
+            }
+            
+            .table-info-guud-mob {
+                display: none;
+            }
+            
+            .profile-mob {
+                display: none;
+            
+            }
+            
+            .grid-map-mob {
+                display: none;
+            }
+            
+            .diiwaan-mob {
+                display: none;
+            }
+            
+            /*  */
+            .head-mobile {
+            
+                display: none;
+            }
+            
+            .ftrain-grid {
+                display: none;
+            
+            
+            }
+            
+            .sec-infobox-tab {
+                display: none;
+            }
+            
+            
+            
+            /*  */
+            
+            
+            
+            
+            
+            
+            
+            
+            @media (min-width:600px) and (max-width:881px) {
+            
+                .head-desk {
+                    display: none;
+                }
+            
+                .first-train {
+                    display: none;
+                }
+            
+            
+                .profile {
+                    display: none;
+                }
+            
+                .grid-map {
+                    display: none;
+                }
+            
+                .ftrain-grid {
+                    display: none;
+            
+                }
+            
+                .diyaarad {
+                    display: none;
+                }
+            
+                .table-info-guud {
+                    display: none;
+                }
+            
+                .table-info-guud-mobi {
+                    display: none;
+                }
+            
+                /*  */
+            
+                /*  */
+                .info-video h3 {
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    margin-right: 1.3rem;
+                    color: white;
+                }
+            
+                .info-video h1 {
+                    font-size: 2.5rem;
+                    margin-right: 1.3rem;
+                    color: white;
+            
+                }
+            
+                .info-video h1 SPAN {
+                    color: #d04932;
+                }
+            
+            
+                .info-video {
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                }
+            
+                .v-hero {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    object-fit: cover;
+                    max-width: 99.7%;
+                    height: 100%;
+                }
+            
+                .hero-top {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    min-height: 100vh;
+                    z-index: -1;
+                    max-width: 99vw;
+            
+                }
+            
+            
+            
+                /*  */
+            
+                .sec-infobox-tab {
+                    width: 91%;
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                    margin-block: 3rem;
+                    margin-inline: 1.75rem;
+            
+                }
+            
+                .boxs-tab {
+                    width: 91%;
+                }
+            
+                .box-tab {
+                    display: flex;
+                    gap: 3rem;
+                    margin-top: 1rem;
+                }
+            
+                .box-tab img {
+                    width: 11rem;
+                    height: 9rem;
+                }
+            
+                .box-tab h3 {
+                    font-size: 1.5rem;
+                }
+            
+                .box-tab p {
+                    font-size: 1.5rem;
+                }
+            
+                /*  */
+                .gmob-diyaarad {
+                    width: 100%;
+                    display: grid;
+                }
+            
+                .mob-diyaarad {
+                    background-image: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    min-height: 17rem;
+                    padding-block: 1rem;
+                    width: 100%;
+                    margin-block: 1rem;
+            
+                }
+            
+                .in-mob-diyaarad {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    margin-top: 2.5rem;
+            
+                }
+            
+                .in-mob-diyaarad p {
+                    font-size: 0.75rem;
+                    margin-inline: 0.3rem;
+                    color: white;
+                    font-weight: 430;
+                }
+            
+            
+                .in-mob-diyaarad #btns {
+                    font-size: 0.75rem;
+                    border-radius: 3px;
+            
+                }
+            
+                .in-mob-diyaarad h1 {
+                    color: white;
+                }
+            
+                .in-mob-diyaarad h1 span {
+                    color: #d04932;
+                }
+            
+                /*  */
+            
+                .boxs-l {
+                    width: 90vw;
+                    gap: 0.3rem;
+                }
+            
+                .boxs-l a {
+                    font-size: 1.3rem;
+                }
+            
+                /*  */
+            
+                .table-info-guudi-tab {
+                    background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
+                    height: 39rem;
+                    width: 100%;
+                    position: relative;
+                }
+            
+                .info-tab {
+                    display: flex;
+                    width: 100%;
+                    position: absolute;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    text-align: center;
+                }
+            
+                .info-tab img {
+                    width: 2.5rem;
+                    margin-block: 0.45rem;
+            
+                }
+            
+                .info-tab h2 {
+                    margin-block: 0.7rem;
+                    color: white;
+                    font-weight: 811;
+                    text-transform: uppercase;
+                }
+            
+            
+                .dhabe-table-tab {
+                    position: absolute;
+                    top: 25%;
+                    left: 3rem;
+                    justify-content: center;
+                    align-items: center;
+                    margin-block: 1rem;
+                    width: 97%;
+                }
+            
+                .info-tab h2 span {
+                    color: #d04932;
+            
+                }
+            
+                .dhabe-table-tab table th {
+                    padding-inline: 1%;
+                    font-size: .83rem;
+            
+                    color: white;
+                }
+            
+                .dhabe-table-tab table td {
+                    font-size: .83rem;
+                    padding-inline: 1.1%;
+                    padding-block: 0.55rem;
+            
+                    color: white;
+            
+                }
+            
+                */
+                /*  */
+            
+                .first-train-mob {
+                    width: 91%;
+                    display: grid;
+            
+                }
+            
+                .boxs-card-mob {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 0.3rem;
+                    width: 91%;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    right: 1rem;
+                }
+            
+                .boxs-l-mob {
+            
+            
+                    display: flex;
+                    padding: 7px;
+                    margin: 1rem;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: start;
+                    width: 100%;
+                    height: 5rem;
+                    gap: 1rem;
+                    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.176);
+                }
+            
+                .box-right-des img {
+                    width: 91%;
+            
+                }
+            
+                .box-right-des {
+                    justify-content: center;
+                    align-items: center;
+                    width: 95%;
+                    margin-inline: 1rem;
+                    flex-wrap: wrap;
+                }
+            
+                .box-right-des h2 {
+                    margin-block: 0.75rem;
+                    font-size: 1.3rem;
+                }
+            
+                .box-right-des button {
+                    margin-block: 1rem;
+            
+            
+                }
+            
+                #box-right-mob {
+                    width: 100%;
+                    height: 15rem;
+                }
+            
+            
+                /*  */
+            
+                .exp-cont h1 {
+                    font-size: 1.3rem;
+            
+                }
+            
+                .exp-cont p {
+            
+            
+                    font-size: 0.75rem;
+                }
+            
+                /*  */
+            
+                .profile-mob {
+            
+                    width: 91%;
+                    margin-block: 1rem;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 0.5rem;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: start;
+                }
+            
+                .role-profile-mob {
+                    background-color: #fff;
+                    padding: 13px;
+                    box-shadow: 0px 0px 11px rgba(45, 24, 24, 0.553);
+                    border-radius: 0.3rem;
+                    width: 100%;
+                    margin-top: 1.5rem;
+            
+                }
+            
+                .role-profile-mob img {
+                    width: 99%;
+                }
+            
+                .role-profile-mob h5 {
+                    font-size: 1.5rem;
+                }
+            
+                .role-profile-mob h3 {
+                    font-size: 1.1rem;
+                }
+            
+                .role-profile-mob p {
+                    font-size: 1.1rem;
+            
+                }
+            
+            
+            
+                .social-mob {
+                    margin-block: 0.55rem;
+                }
+            
+                /*  */
+            
+                .profile-tab {
+                    display: none;
+                    grid-template-columns: 1fr;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+            
+                .role-profile-tab {
+                    width: 91%;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px;
+                    border-radius: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 3rem;
+            
+                    margin-top: 1.5rem;
+            
+            
+                }
+            
+                .role-profile-tab img {
+                    width: 100%;
+                }
+            
+                /*  */
+            
+                .grid-map-mob {
+                    display: none;
+                    width: 100%;
+                    height: auto;
+                }
+            
+                .grid-map-tab {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+            
+                }
+            
+                .midaw-tab {
+                    display: flex;
+                    flex-direction: column;
+                    width: 91%;
+                }
+            
+                .mapi-tab {
+                    width: 99%;
+                    margin-block: 3rem;
+                    height: 350px;
+            
+                }
+            
+                .mapi-tab iframe {
+                    width: 97%;
+                    margin: 1rem;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                .diiwaani-tab {
+            
+                    background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg);
+                    display: flex;
+                    margin-block: 1.7rem;
+                    height: 100%;
+                    width: 100%;
+            
+            
+                }
+            
+                .formi-tab {
+            
+            
+                    justify-content: center;
+            
+                    background-color: #d0c6c4;
+            
+                    margin-block: 1rem;
+                    width: 95%;
+            
+                }
+            
+                .formi-tab input {
+                    width: 99%;
+                    padding-block: 0.5rem;
+                    padding-inline: 0.5rem;
+                    margin-top: 1rem;
+                }
+            
+                .mss-input {
+                    margin-block: 1rem;
+            
+                    height: 15rem;
+                    width: 97%;
+                    padding-block: 0.5rem;
+                    padding-inline: 0.5rem;
+            
+                }
+            
+            
+            
+                /*  */
+            
+                .footer-cont {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+            
+                    margin-block: .3rem
+                }
+            
+                .btn-footer {
+                    background-color: none;
+                    color: #df5d46;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                }
+            
+            
+                /* mobile nav */
+            
+                .head-mobile {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.7rem;
+                    background-color: rgb(255, 255, 255);
+                    height: 3.5rem;
+                    position: sticky;
+                    top: 0;
+            
+                    width: 100vw;
+            
+                }
+            
+                .head-mobile h1 {
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+            
+                .head-mobile h1 span {
+                    color: #ed6a52;
+                }
+            
+                /*  */
+            
+            
+                .first-train-mob {
+            
+                    width: 100%;
+                }
+            
+            
+            
+            
+            
+                .hamburger {
+                    display: flex;
+                    font-size: 1.7rem;
+                    position: fixed;
+                    cursor: pointer;
+                    width: 15px;
+                    z-index: 1;
+                }
+            
+            
+            
+                .hamburger span {
+                    display: bloc;
+                    height: 3px;
+                    background: #000000;
+                    border-radius: 3px;
+                    transition: 0.3s;
+                }
+            
+                .mobile-menu {
+                    max-width: 100vw;
+                    max-height: 100vh;
+                    margin-top: 2.7rem;
+                    width: 100%;
+                    height: 100vh;
+                    display: flex;
+                    text-align: center;
+                    position: fixed;
+                    top: 0;
+                    right: -100%;
+                    z-index: 1000;
+            
+                    transition: transform 350ms ease-in-out;
+                }
+            
+                .Menu-link li {
+                    padding: 1.5rem;
+                    border: 1px solid rgb(85, 93, 104);
+                }
+            
+                .btn-sign {
+                    width: 100%;
+                    background-color: #d04932;
+                }
+            
+                /*  */
+            
+            
+            
+                /* Menu open */
+                .mobile-menu.active {
+                    right: 0;
+                }
+            
+                /* Hamburger animate to X */
+                .hamburger.active span:nth-child(1) {
+                    transform: rotate(45deg) translateY(8px);
+                }
+            
+                .hamburger.active span:nth-child(2) {
+                    opacity: 0;
+                }
+            
+                .hamburger.active span:nth-child(3) {
+                    transform: rotate(-45deg) translateY(-8px);
+                }
+            
+                .sec-infobox {
+                    display: none;
+                }
+            
+            
+            }
+            
+            
+            @media (max-width:479px) {
+            
+                .head-desk {
+                    display: none;
+                }
+            
+            
+                .sec-infobox-tab {
+                    display: none;
+                }
+            
+                .first-train {
+                    display: none;
+                }
+            
+            
+                .profile {
+                    display: none;
+                }
+            
+                .grid-map {
+                    display: none;
+                }
+            
+                .ftrain-grid {
+                    display: none;
+            
+                }
+            
+                .diyaarad {
+                    display: none;
+                }
+            
+                .table-info-guud {
+                    display: none;
+                }
+            
+                .info-t {
+                    display: none;
+                }
+            
+                .table-info-guud-t {
+                    display: none;
+                }
+            
+            
+            
+                .table-info-guud-mobile {
+                    display: none;
+                }
+            
+            
+                /*  */
+                .first-train-mob {
+                    display: grid;
+                }
+            
+            
+            
+                .boxs-l-mob {
+                    display: flex;
+                    padding: 10px;
+                    margin: 1rem;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: start;
+                    width: 100%;
+                    height: 7rem;
+                    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.176);
+                    gap: 1rem;
+                }
+            
+                #box-right-mob {
+                    width: 100%;
+                }
+            
+                .box-right-des {
+                    justify-content: center;
+                    align-items: center;
+                    margin-block: 1rem;
+                }
+            
+                .box-right-des h2 {
+                    color: #474444;
+                    margin-block: 0.5rem;
+                }
+            
+                /*  */
+            
+                .info-video h3 {
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    margin-right: 1.3rem;
+                    color: white;
+                }
+            
+                .info-video h1 {
+                    font-size: 1rem;
+                    margin-right: 1.3rem;
+                    color: white;
+            
+                }
+            
+                .info-video h1 SPAN {
+                    color: #d04932;
+                }
+            
+            
+                .info-video {
+            
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                }
+            
+                .v-hero {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    object-fit: cover;
+                    width: 99.7%;
+                    height: 100%;
+                }
+            
+                .hero-top {
+                    display: f;
+                    flex-wrap: wrap;
+                    max-width: 99vw;
+                    min-height: 100vh;
+                    z-index: -1;
+                    width: 100%;
+            
+                }
+            
+            
+            
+                /*  */
+                .sec-infobox-mob {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+            
+                    height: auto;
+                }
+            
+                .box-mob {
+                    display: flex;
+                    height: auto;
+                    flex-direction: row;
+                    margin-block: 0.35rem;
+                    gap: 1.3rem;
+                    align-items: center;
+                    justify-content: center;
+            
+                }
+            
+                .box-mob img {
+                    width: 5rem
+                }
+            
+                .info-bmob {
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 1rem;
+            
+                }
+            
+                .info-bmob h3 {
+                    color: #5e5b5b;
+                    font-size: 1.1rem;
+                    font-weight: 800;
+                }
+            
+                .info-bmob p {
+                    font-size: 0.8rem;
+                }
+            
+                .info-bmob a {
+                    color: #d04932;
+                    font-size: 0.8rem;
+                    font-weight: 450;
+            
+                }
+            
+            
+                /*  */
+                .gmob-diyaarad {
+                    width: 100%;
+                    display: grid;
+                }
+            
+                .mob-diyaarad {
+                    background-image: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    min-height: 17rem;
+                    padding-block: 1rem;
+                    width: 100%;
+                    margin-block: 1rem;
+            
+                }
+            
+                .in-mob-diyaarad {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    margin-top: 2.5rem;
+            
+                }
+            
+                .in-mob-diyaarad p {
+                    font-size: 0.75rem;
+                    margin-inline: 0.3rem;
+                    color: white;
+                    font-weight: 430;
+                }
+            
+            
+                .in-mob-diyaarad #btns {
+                    font-size: 0.75rem;
+                    border-radius: 3px;
+            
+                }
+            
+                .in-mob-diyaarad h1 {
+                    color: white;
+                }
+            
+                .in-mob-diyaarad h1 span {
+                    color: #d04932;
+                }
+            
+                /*  */
+            
+                .boxs-l {
+                    width: 90vw;
+                    gap: 0.3rem;
+                }
+            
+                .boxs-l a {
+                    font-size: 1.3rem;
+                }
+            
+                /*  */
+            
+                .table-info-guud-mobile {
+                    background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
+                    height: 37rem;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    display: flex;
+                    z-index: 1;
+                    position: relative;
+                }
+            
+                #sabti {
+                    color: #d04932;
+                }
+            
+                .info-tab-mobile {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+            
+            
+                }
+            
+                .info-tab-mobile img {
+                    width: 2.5rem;
+                    margin-block: 0.45rem;
+            
+                }
+            
+            
+            
+                .info-tab-mobile h2 {
+                    margin-block: 0.7rem;
+                    color: white;
+                    font-weight: 811;
+                    text-transform: uppercase;
+                }
+            
+                .info-tab-mobile h2 span {
+                    color: #d04932;
+            
+                }
+            
+                .info-tab-mobile p {
+                    margin-bottom: 0.5rem;
+                    color: white;
+                    font-size: 0.9rem;
+                }
+            
+            
+                .days-mobile {
+                    color: white;
+                    font-weight: 500;
+                }
+            
+                .dhab-table-mobile {
+                    width: 97%;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 47%;
+                    margin-inline: 0.3rem;
+            
+            
+                    z-index: -1;
+                }
+            
+                .info-tab-mobile {
+                    position: absolute;
+                    top: 1.5rem;
+                }
+            
+            
+                .dhab-table-mobile table th {
+            
+                    color: white;
+                }
+            
+                .dhab-table-mobile table td {
+                    font-size: .83rem;
+            
+            
+                    color: white;
+            
+                }
+            
+                */ .exp-cont h1 {
+                    font-size: 1.3rem;
+            
+                }
+            
+                .exp-cont p {
+            
+            
+                    font-size: 0.75rem;
+                }
+            
+                /*  */
+            
+                .profile-mob {
+                    background-color: #ffffff56;
+                    width: 91%;
+                    margin-block: 1rem;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 1.7rem;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: start;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    flex-wrap: wrap;
+            
+                }
+            
+                .role-profile-mob {
+                    background-color: #fff;
+                    padding: 15px;
+                    box-shadow: 0px 0px 11px rgba(45, 24, 24, 0.553);
+                    border-radius: 0.3rem;
+                    margin: 0.65rem;
+                }
+            
+                .role-profile-mob img {
+                    width: 100%;
+                }
+            
+                .social-mob {
+                    margin-block: 0.55rem;
+                }
+            
+                .grid-map-mob {
+                    display: none;
+                }
+            
+                /*  */
+                .midaw-tab {
+                    display: flex;
+                    flex-direction: column;
+                    width: 91%;
+                }
+            
+                .mss-input {
+                    margin-block: 1rem;
+                    height: 15rem;
+                    width: 97%;
+                    padding-block: 0.5rem;
+                    padding-inline: 0.5rem;
+            
+                }
+            
+                .formi-tab input {
+                    width: 99%;
+                    padding-block: 0.5rem;
+                    padding-inline: 0.5rem;
+                    margin-top: 1rem;
+            
+                }
+            
+                .formi-tab button {
+                    margin-bottom: 0.5rem;
+                }
+            
+                .formi-tab {
+            
+            
+                    justify-content: center;
+                    ;
+                    background-color: #d0c6c4;
+                    width: 95%;
+                    height: 100%;
+                    margin-block: 1rem;
+            
+                }
+            
+                .mapi-tab {
+                    width: 99%;
+                    margin-block: 3rem;
+                    height: 350px;
+            
+                }
+            
+                .mapi-tab iframe {
+                    width: 97%;
+                    margin: 1rem;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+            
+            
+            
+                /*  */
+            
+                .footer-cont {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+            
+                    margin-block: .3rem
+                }
+            
+                .btn-footer {
+                    background-color: none;
+                    color: #df5d46;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                }
+            
+            
+                /* mobile nav */
+            
+                .head-mobile {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.7rem;
+                    background-color: rgb(255, 255, 255);
+                    height: 3.5rem;
+                    position: sticky;
+                    top: 0;
+            
+                    width: 100vw;
+            
+                }
+            
+                .head-mobile h1 {
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+            
+                .head-mobile h1 span {
+                    color: #ed6a52;
+                }
+            
+            
+            
+            
+            
+                .hamburger {
+                    display: flex;
+                    font-size: 1.7rem;
+                    position: fixed;
+                    cursor: pointer;
+                    width: 15px;
+                    z-index: 1;
+            
+            
+            
+            
+            
+            
+                }
+            
+            
+            
+                .hamburger span {
+                    display: bloc;
+                    height: 3px;
+                    background: #000000;
+                    border-radius: 3px;
+                    transition: 0.3s;
+                }
+            
+                .mobile-menu {
+                    max-width: 100vw;
+                    max-height: 100vh;
+                    margin-top: 2.7rem;
+                    width: 100%;
+                    height: 100vh;
+                    display: flex;
+                    text-align: center;
+                    position: fixed;
+                    top: 0;
+                    right: -100%;
+                    z-index: 1000;
+            
+                    transition: transform 350ms ease-in-out;
+                }
+            
+                .Menu-link li {
+                    padding: 1.5rem;
+                    border: 1px solid rgb(85, 93, 104);
+                }
+            
+                .btn-sign {
+                    width: 100%;
+                    background-color: #d04932;
+                }
+            
+                /* Menu open */
+                .mobile-menu.active {
+                    right: 0;
+                }
+            
+                /* Hamburger animate to X */
+                .hamburger.active span:nth-child(1) {
+                    transform: rotate(45deg) translateY(8px);
+                }
+            
+                .hamburger.active span:nth-child(2) {
+                    opacity: 0;
+                }
+            
+                .hamburger.active span:nth-child(3) {
+                    transform: rotate(-45deg) translateY(-8px);
+                }
+            
+                .sec-infobox {
+                    display: none;
+                }
+            
+                .profile-tab {
+                    display: none;
+                }
+            
+                .dhab-table-tab {
+                    display: none;
+                }
+            
+                .form-tab {
+                    display: none;
+                }
+            
+                .grid-map-tab {
+                    display: none;
+                }
+            
+                .info-tab {
+                    display: none;
+                }
+            
+                .dhabi-table-tab {
+                    display: none;
+                }
+            
+            
+            }
+            
+            
+            
+            @media (min-width:481px) and (max-width:600px) {
+            
+                .head-desk {
+                    display: none;
+                }
+            
+            
+                .sec-infobox-tab {
+                    display: none;
+                }
+            
+                .first-train {
+                    display: none;
+                }
+            
+            
+                .profile {
+                    display: none;
+                }
+            
+                .grid-map {
+                    display: none;
+                }
+            
+                .ftrain-grid {
+                    display: none;
+            
+                }
+            
+                .diyaarad {
+                    display: none;
+                }
+            
+                .table-info-guud {
+                    display: none;
+                }
+            
+                .info-t {
+                    display: none;
+                }
+            
+                .table-info-guud-t {
+                    display: none;
+                }
+            
+            
+            
+                .table-info-guud-mobile {
+                    display: none;
+                }
+            
+                /*  */
+                .first-train-mob {
+                    display: grid;
+                }
+            
+            
+            
+                .boxs-l-mob {
+                    display: flex;
+                    padding: 10px;
+                    margin: 1rem;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: start;
+                    width: 100%;
+                    height: 7rem;
+                    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.176);
+                    gap: 1rem;
+                }
+            
+                #box-right-mob {
+                    width: 100%;
+                }
+            
+                .box-right-des {
+                    justify-content: center;
+                    align-items: center;
+                    margin-block: 1rem;
+                }
+            
+                .box-right-des h2 {
+                    color: #474444;
+                    margin-block: 0.5rem;
+                }
+            
+                /*  */
+                .info-video h3 {
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    margin-right: 1.3rem;
+                    color: white;
+                }
+            
+                .info-video h1 {
+                    font-size: 2.5rem;
+                    margin-right: 1.3rem;
+                    color: white;
+            
+                }
+            
+                .info-video h1 SPAN {
+                    color: #d04932;
+                }
+            
+            
+                .info-video {
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                }
+            
+                .v-hero {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    object-fit: cover;
+                    max-width: 99.7%;
+                    height: 100%;
+                }
+            
+                .hero-top {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    min-height: 100vh;
+                    z-index: -1;
+                    max-width: 99vw;
+            
+                }
+            
+                /*  */
+                .sec-infobox-mob {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+            
+                    height: auto;
+                }
+            
+                .box-mob {
+                    display: flex;
+                    height: auto;
+                    flex-direction: row;
+                    margin-block: 0.35rem;
+                    gap: 1.3rem;
+                    align-items: center;
+                    justify-content: center;
+            
+                }
+            
+                .box-mob img {
+                    width: 5rem
+                }
+            
+                .info-bmob {
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 1rem;
+            
+                }
+            
+                .info-bmob h3 {
+                    color: #5e5b5b;
+                    font-size: 1.1rem;
+                    font-weight: 800;
+                }
+            
+                .info-bmob p {
+                    font-size: 0.8rem;
+                }
+            
+                .info-bmob a {
+                    color: #d04932;
+                    font-size: 0.8rem;
+                    font-weight: 450;
+            
+                }
+            
+            
+                /*  */
+                .gmob-diyaarad {
+                    width: 100%;
+                    display: grid;
+                }
+            
+                .mob-diyaarad {
+                    background-image: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    min-height: 17rem;
+                    padding-block: 1rem;
+                    width: 100%;
+                    margin-block: 1rem;
+            
+                }
+            
+                .in-mob-diyaarad {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    margin-top: 2.5rem;
+            
+                }
+            
+                .in-mob-diyaarad p {
+                    font-size: 0.75rem;
+                    margin-inline: 0.3rem;
+                    color: white;
+                    font-weight: 430;
+                }
+            
+            
+                .in-mob-diyaarad #btns {
+                    font-size: 0.75rem;
+                    border-radius: 3px;
+            
+                }
+            
+                .in-mob-diyaarad h1 {
+                    color: white;
+                }
+            
+                .in-mob-diyaarad h1 span {
+                    color: #d04932;
+                }
+            
+                /*  */
+            
+                .boxs-l {
+                    width: 90vw;
+                    gap: 0.3rem;
+                }
+            
+                .boxs-l a {
+                    font-size: 1.3rem;
+                }
+            
+                /*  */
+            
+                .table-info-guud-mobile {
+                    background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
+                    height: 37rem;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    display: flex;
+                    z-index: 1;
+                    position: relative;
+                }
+            
+                #sabti {
+                    color: #d04932;
+                }
+            
+                .info-tab-mobile {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+            
+            
+                }
+            
+                .info-tab-mobile img {
+                    width: 2.5rem;
+                    margin-block: 0.45rem;
+            
+                }
+            
+            
+            
+                .info-tab-mobile h2 {
+                    margin-block: 0.7rem;
+                    color: white;
+                    font-weight: 811;
+                    text-transform: uppercase;
+                }
+            
+                .info-tab-mobile h2 span {
+                    color: #d04932;
+            
+                }
+            
+                .info-tab-mobile p {
+                    margin-bottom: 0.5rem;
+                    color: white;
+                    font-size: 0.9rem;
+                }
+            
+            
+                .days-mobile {
+                    color: white;
+                    font-weight: 500;
+                }
+            
+                .dhab-table-mobile {
+                    width: 97%;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 47%;
+                    left: 3%;
+                    margin-inline: 0.3rem;
+            
+            
+                    z-index: -1;
+                }
+            
+                .info-tab-mobile {
+                    position: absolute;
+                    top: 1.5rem;
+                }
+            
+            
+                .dhab-table-mobile table th {
+                    padding-block: 2.7%;
+                    padding-inline: 0.25rem;
+            
+                    color: white;
+                }
+            
+                .dhab-table-mobile table td {
+                    font-size: .83rem;
+                    padding-block: 2.7%;
+                    padding-inline: 0.25rem;
+            
+            
+                    color: white;
+            
+                }
+            
+                */ .exp-cont h1 {
+                    font-size: 1.3rem;
+            
+                }
+            
+                .exp-cont p {
+            
+            
+                    font-size: 0.75rem;
+                }
+            
+                /*  */
+            
+                .profile-mob {
+                    background-color: #ffffff56;
+                    width: 91%;
+                    margin-block: 1rem;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 1.7rem;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: start;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    flex-wrap: wrap;
+            
+                }
+            
+                .role-profile-mob {
+                    background-color: #fff;
+                    padding: 15px;
+                    box-shadow: 0px 0px 11px rgba(45, 24, 24, 0.553);
+                    border-radius: 0.3rem;
+                    margin: 0.65rem;
+                }
+            
+                .role-profile-mob img {
+                    width: 100%;
+                }
+            
+                .social-mob {
+                    margin-block: 0.55rem;
+                }
+            
+                .grid-map-mob {
+                    display: none;
+                }
+            
+                /*  */
+            
+                .midaw-tab {
+                    display: flex;
+                    flex-direction: column;
+                    width: 91%;
+                }
+            
+                .mss-input {
+                    margin-block: 1rem;
+                    height: 15rem;
+                    width: 97%;
+                    padding-block: 0.5rem;
+                    padding-inline: 0.5rem;
+            
+                }
+            
+                .formi-tab input {
+                    width: 99%;
+                    padding-block: 0.5rem;
+                    padding-inline: 0.5rem;
+                    margin-top: 1rem;
+            
+                }
+            
+                .formi-tab button {
+                    margin-bottom: 0.5rem;
+                }
+            
+                .formi-tab {
+            
+            
+                    justify-content: center;
+                    ;
+                    background-color: #d0c6c4;
+                    width: 95%;
+                    height: 100%;
+                    margin-block: 1rem;
+            
+                }
+            
+                .mapi-tab {
+                    width: 99%;
+                    margin-block: 3rem;
+                    height: 350px;
+            
+                }
+            
+                .mapi-tab iframe {
+                    width: 97%;
+                    margin: 1rem;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+            
+            
+            
+                /*  */
+            
+                .footer-cont {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+            
+                    margin-block: .3rem
+                }
+            
+                .btn-footer {
+                    background-color: none;
+                    color: #df5d46;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                }
+            
+            
+                /* mobile nav */
+            
+                .head-mobile {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.7rem;
+                    background-color: rgb(255, 255, 255);
+                    height: 3.5rem;
+                    position: sticky;
+                    top: 0;
+            
+                    width: 100vw;
+            
+                }
+            
+                .head-mobile h1 {
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+            
+                .head-mobile h1 span {
+                    color: #ed6a52;
+                }
+            
+            
+            
+            
+            
+                .hamburger {
+                    display: flex;
+                    font-size: 1.7rem;
+                    position: fixed;
+                    cursor: pointer;
+                    width: 15px;
+                    z-index: 1;
+            
+            
+            
+            
+            
+            
+                }
+            
+            
+            
+                .hamburger span {
+                    display: bloc;
+                    height: 3px;
+                    background: #000000;
+                    border-radius: 3px;
+                    transition: 0.3s;
+                }
+            
+                .mobile-menu {
+                    max-width: 100vw;
+                    max-height: 100vh;
+                    margin-top: 2.7rem;
+                    width: 100%;
+                    height: 100vh;
+                    display: flex;
+                    text-align: center;
+                    position: fixed;
+                    top: 0;
+                    right: -100%;
+                    z-index: 1000;
+            
+                    transition: transform 350ms ease-in-out;
+                }
+            
+                .Menu-link li {
+                    padding: 1.5rem;
+                    border: 1px solid rgb(85, 93, 104);
+                }
+            
+                .btn-sign {
+                    width: 100%;
+                    background-color: #d04932;
+                }
+            
+                /* Menu open */
+                .mobile-menu.active {
+                    right: 0;
+                }
+            
+                /* Hamburger animate to X */
+                .hamburger.active span:nth-child(1) {
+                    transform: rotate(45deg) translateY(8px);
+                }
+            
+                .hamburger.active span:nth-child(2) {
+                    opacity: 0;
+                }
+            
+                .hamburger.active span:nth-child(3) {
+                    transform: rotate(-45deg) translateY(-8px);
+                }
+            
+                .sec-infobox {
+                    display: none;
+                }
+            
+                .profile-tab {
+                    display: none;
+                }
+            
+                .dhab-table-tab {
+                    display: none;
+                }
+            
+                .form-tab {
+                    display: none;
+                }
+            
+                .grid-map-tab {
+                    display: none;
+                }
+            
+                .info-tab {
+                    display: none;
+                }
+            
+                .dhabi-table-tab {
+                    display: none;
+                }
+            
+            
+            }</style>
+</head>
+
+<body>
+
+    <header class="head-desk">
+
+        <nav class="d-menu cont">
+
+
+            <h1>training<span>studio</span></h1>
+
+
+            <ul class="left-menu">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="white">About</a></li>
+                <li><a href="#" id="white">Classes</a></li>
+                <li><a href="#" id="white">schedules</a></li>
+                <li><a href="#" id="white">Contact</a></li>
+                <li><a href="#" id="btn">signup</a></li>
+            </ul>
+
+
+        </nav>
+
+
+    </header>
+    <!--  head-mobile -->
+    <header class="head-mobile">
+
+
+
+        <h1>training<span>studio</span></h1>
+
+        <div class="hamburger" aria-controls="mobile-menu" aria-expanded="false">
+            <i class="open-icon">☰</i>
+            <i class="close-icon" style="display:none;">✖</i>
+        </div>
+
+        <!--  -->
+
+        <nav class="mobile-menu" id="mobile-menu" data-visible="false">
+
+
+            <ul class="Menu-link cont">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="white">About</a></li>
+                <li><a href="#" id="white">Classes</a></li>
+                <li><a href="#" id="white">schedules</a></li>
+                <li><a href="#" id="white">Contact</a></li>
+                <li><a href="#" id="btn" class="btn-sign">signup</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!--  -->
+
+    <!--  -->
+    <section class="hero-top">
+
+        <video autoplay muted loop class="v-hero">
+            <source src="https://www.pexels.com/download/video/3195943/" type="">
+        </video>
+
+       <div class="overlay"></div> 
+
+        <div class="info-video cont">
+            <h3> work harder, get stronger</h3>
+            <h1>Easy with our <span>gym</span></h1>
+            <button id="btns"> become a member</button>
+        </div>
+
+    </section>
+
+    <!--  -->
+
+    <div class="three cont">
+        <h2>Choose <span>Program</span></h2>
+        <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png" alt="">
+
+        <p>Training Studio is free CSS template for gyms and fitness centers. You are <br>allowed to use this layout for
+            your business website.</p>
+    </div>
+
+
+    <div class="sec-infobox cont">
+        <!--  -->
+        <div class="left">
+            <div class="box">
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="box-info">
+
+                    <h3>Basic Fitness</h3>
+                    <p>Please do not re-distribute this template ZIP file on any
+                        <br>template collection website. This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="box-info">
+
+                    <h3>Basic Fitness</h3>
+                    <p>Please do not re-distribute this template ZIP file on any
+                        <br>template collection website. This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="box-info">
+
+                    <h3>Basic Fitness</h3>
+                    <p>Please do not re-distribute this template ZIP file on any
+                        <br>template collection website. This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!--  -->
+
+        <div class="right">
+            <div class="box">
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="box-info">
+
+                    <h3>Advanced Muscle Course</h3>
+                    <p class="p">Please do not re-distribute this template ZIP file on any
+                        <br>template collection website. This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="box-info">
+
+                    <h3> Yoga Training</h3>
+                    <p>Please do not re-distribute this template ZIP file on any
+                        <br>template collection website. This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="box-info">
+
+                    <h3> Yoga Training</h3>
+                    <p>Please do not re-distribute this template ZIP file on any
+                        <br>template collection website. This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- mobi -->
+
+
+    <section class="sec-infobox-mob">
+
+        <div class="info-boxs-mob cont">
+
+
+
+            <div class="boxs-mob">
+
+                <div class="box-mob">
+
+
+                    <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                    <div class="info-bmob">
+                        <h3>Basic Fitness</h3>
+                        <p>Please do not re-distribute this template ZIP <br> file on any
+                            template collection website.<br>This is not allowed.
+                        </p>
+                        <a href="#home">Discover More
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="box-mob">
+
+
+                    <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                    <div class="info-bmob">
+                        <h3>Advanced Muscle Course</h3>
+                        <p>Please do not re-distribute this template ZIP <br> file on any
+                            template collection website.<br>This is not allowed.
+                        </p>
+                        <a href="#home">Discover More
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="box-mob">
+
+
+                    <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                    <div class="info-bmob">
+                        <h3>New Gym Training</h3>
+                        <p>Please do not re-distribute this template ZIP <br> file on any
+                            template collection website.<br>This is not allowed.
+                        </p>
+                        <a href="#home">Discover More
+                        </a>
+                    </div>
+
+                </div>
+                <!-- r -->
+
+                <div class="box-mob">
+
+
+                    <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                    <div class="info-bmob">
+                        <h3>Basic Fitness</h3>
+                        <p>Please do not re-distribute this template ZIP <br> file on any
+                            template collection website.<br>This is not allowed.
+                        </p>
+                        <a href="#home">Discover More
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="box-mob">
+
+
+                    <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                    <div class="info-bmob">
+                        <h3>Center Class</h3>
+                        <p>Please do not re-distribute this template ZIP <br> file on any
+                            template collection website.<br>This is not allowed.
+                        </p>
+                        <a href="#home">Discover More
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="box-mob">
+
+
+                    <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                    <div class="info-bmob">
+                        <h3>Body Building Course</h3>
+                        <p>Please do not re-distribute this template ZIP <br> file on any
+                            template collection website.<br>This is not allowed.
+                        </p>
+                        <a href="#home">Discover More
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="box-mob">
+
+
+                    <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                    <div class="info-bmob">
+                        <h3>Basic Muscle Course</h3>
+                        <p>Please do not re-distribute this template ZIP <br> file on any
+                            template collection website.<br>This is not allowed.
+                        </p>
+                        <a href="#home">Discover More
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- tab -->
+
+    <section class="sec-infobox-tab">
+
+
+
+        <div class="boxs-tab">
+
+            <div class="box-tab">
+
+
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="info-bmob">
+                    <h3>Basic Fitness</h3>
+                    <p>Please do not re-distribute this template ZIP <br> file on any
+                        template collection website.<br>This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box-tab">
+
+
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="info-bmob">
+                    <h3>Advanced Muscle Course</h3>
+                    <p>Please do not re-distribute this template ZIP <br> file on any
+                        template collection website.<br>This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box-tab">
+
+
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="info-bmob">
+                    <h3>New Gym Training</h3>
+                    <p>Please do not re-distribute this template ZIP <br> file on any
+                        template collection website.<br>This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+                </div>
+
+            </div>
+            <!-- r -->
+
+            <div class="box-tab">
+
+
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="info-bmob">
+                    <h3>Basic Fitness</h3>
+                    <p>Please do not re-distribute this template ZIP <br> file on any
+                        template collection website.<br>This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box-tab">
+
+
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="info-bmob">
+                    <h3>Center Class</h3>
+                    <p>Please do not re-distribute this template ZIP <br> file on any
+                        template collection website.<br>This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="box-tab">
+
+
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="info-bmob">
+                    <h3>Body Building Course</h3>
+                    <p>Please do not re-distribute this template ZIP <br> file on any
+                        template collection website.<br>This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box-tab">
+
+
+                <img src="	https://gym-web-blush-two.vercel.app/images/features-first-icon.png" alt="">
+                <div class="info-bmob">
+                    <h3>Basic Muscle Course</h3>
+                    <p>Please do not re-distribute this template ZIP <br> file on any
+                        template collection website.<br>This is not allowed.
+                    </p>
+                    <a href="#home">Discover More
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- diyaarado -->
+    <section>
+        <div class="diyaarad">
+            <div class="info-diyaarad cont">
+                <h1>Don’t <span class="diyaarad-span"> think, </span> begin <span class="diyaarad-span"> today </span>!
+                </h1>
+
+                <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio
+                    augue eget libero. <br> Morbi tempus mauris a nisi luctus imperdiet. <br></p>
+                <button id="btns"> become a member</button>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!-- mobi-diya -->
+
+
+    <section class="gmob-diyaarad">
+        <div class="mob-diyaarad">
+            <div class="in-mob-diyaarad cont">
+                <h1>Don’t <span class="diyaarad-span"> think, </span> begin <span class="diyaarad-span"> today </span>!
+                </h1>
+
+                <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio
+                    augue eget libero. <br> Morbi tempus mauris a nisi luctus imperdiet. <br></p>
+                <button id="btns"> become a member</button>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!--  -->
+
+    <div class="after-plane cont">
+
+
+        <h1>Our <span>Classes</span></h1>
+        <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png" alt="">
+
+
+
+        <p class="p">Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra <br> ipsum dolor,
+            ultricies
+            fermentum
+            massa consequat eu.</p>
+
+    </div>
+
+    <!--  -->
+
+
+    <div class="first-train cont">
+
+        <div class="boxs-crd">
+            <div class="boxs-l">
+                <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+                    alt="">
+                <a href="#first" id="first"> first training class</a>
+            </div>
+            <div class="boxs-l">
+                <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+                    alt="">
+                <a href="#first">Second training class</a>
+            </div>
+
+            <div class="boxs-l">
+                <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+                    alt="">
+                <a href="#first"> Third training class</a>
+            </div>
+            <div class="boxs-l">
+                <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+                    alt="">
+                <a href="#first"> Fourth training class</a>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="box-right cont">
+            <img src="https://media.istockphoto.com/id/2152164282/photo/close-up-of-a-female-hand-picking-up-a-heavy-dumbbell.webp?a=1&b=1&s=612x612&w=0&k=20&c=C3vkjPDamMvm-T61akMACa33sOcKGugwIqwRzS4C90A="
+                alt="" id="img-boxs-l">
+            <h2>First Training Class</h2>
+            <p class="p">Phasellus convallis mauris sed elementum Donec posuere leo sed dui
+                eleifend hendrerit.<br> Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem
+                fermentum sem tincidunt lacinia <br> gravida aliquam nunc. Morbi quis erat imperdiet,
+                molestie nunc ut, accumsan diam <br></p>
+            <button id="btns" class="btn-train-des"> VIEW SCHEDULE </button>
+
+        </div>
+    </div>
+
+
+    <!--  -->
+
+
+    <div class="first-train-mob cont">
+
+        <div class="boxs-card-mob cont">
+            <div class="boxs-l-mob">
+                <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+                    alt="">
+                <a href="#first" id="first"> first training class</a>
+            </div>
+            <div class="boxs-l-mob">
+                <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+                    alt="">
+                <a href="#first" id="first"> first training class</a>
+            </div>
+            <div class="boxs-l-mob">
+                <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+                    alt="">
+                <a href="#first" id="first"> first training class</a>
+            </div>
+            <div class="boxs-l-mob">
+                <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+                    alt="">
+                <a href="#first" id="first"> first training class</a>
+            </div>
+        </div>
+
+
+        <div class="box-right-des cont">
+            <img src="https://media.istockphoto.com/id/2152164282/photo/close-up-of-a-female-hand-picking-up-a-heavy-dumbbell.webp?a=1&b=1&s=612x612&w=0&k=20&c=C3vkjPDamMvm-T61akMACa33sOcKGugwIqwRzS4C90A="
+                alt="" id="box-right-mob">
+            <h2>First Training Class</h2>
+            <p class="p">Phasellus convallis mauris sed elementum Donec posuere leo sed dui
+                eleifend hendrerit.<br> Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem
+                fermentum sem tincidunt lacinia <br> gravida aliquam nunc. Morbi quis erat imperdiet,
+                molestie nunc ut, accumsan diam <br></p>
+            <button id="btns" class="btn-train"> VIEW SCHEDULE </button>
+
+        </div>
+    </div>
+
+
+    <!--  -->
+
+    <div class="table-info-guud">
+        <div class="info-table cont">
+            <h2>Classes <span>Schedule</span></h2>
+            <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+                alt="">
+            <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra <br> ipsum dolor, ultricies
+                fermentum massa consequat eu.</p>
+
+            <div class="days">
+
+                <span id="sabti"> Sabti </span>
+                <span class="day">/</span>
+                <span class="day">Axad </span>
+                <span class="day">/</span>
+                <span class="day">Isniin </span>
+                <span class="day">/</span>
+                <span class="day">Talaada </span>
+                <span class="day">/</span>
+                <span class="day">Khamiis</span>
+
+            </div>
+        </div>
+        <div class="cont dhab-tabl">
+            <table border="">
+
+
+                <tr>
+                    <th>Fitness Class</th>
+                    <th>10:00AM - 11:30AM</th>
+                    <th></th>
+                    <th>Xudayfi</th>
+                </tr>
+
+                <tr>
+                    <td>Muscle Training</td>
+                    <td></td>
+                    <td></td>
+                    <td>Mohamed</td>
+
+                </tr>
+
+                <tr>
+
+
+                    <td>Body Building</td>
+                    <td></td>
+                    <td>2:00PM - 3:30PM</td>
+                    <td>Siciid</td>
+
+                </tr>
+
+                <tr>
+                    <td>Yoga Training Class</td>
+                    <td></td>
+                    <td></td>
+                    <td>Cumar</td>
+                </tr>
+
+
+                <tr>
+                    <td>Advanced Training</td>
+                    <td></td>
+                    <td></td>
+                    <td>Cismaan</td>
+                </tr>
+
+
+
+            </table>
+        </div>
+    </div>
+
+    <!-- mob-tab -->
+    <div class="table-info-guud-mobile">
+        <div class="info-tab-mobile cont">
+            <h2>Classes <span>Schedule</span></h2>
+            <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+                alt="">
+            <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra <br> ipsum dolor, ultricies
+                fermentum massa consequat eu.</p>
+
+            <div class="days-mobile">
+
+                <span id="sabti"> Sabti </span>
+                <span class="day">/</span>
+                <span class="day">Axad </span>
+                <span class="day">/</span>
+                <span class="day">Isniin </span>
+                <span class="day">/</span>
+                <span class="day">Talaada </span>
+                <span class="day">/</span>
+                <span class="day">Khamiis</span>
+
+            </div>
+        </div>
+        <div class="dhab-table-mobile">
+            <table border="2">
+
+                <tr>
+                    <th>Fitness Class</th>
+                    <th>10:00AM - 11:30AM</th>
+                    <th></th>
+                    <th>Xudayfi</th>
+                </tr>
+
+                <tr>
+                    <td>Muscle Training</td>
+                    <td></td>
+                    <td></td>
+                    <td>Mohamed</td>
+
+                </tr>
+
+                <tr>
+
+
+                    <td>Body Building</td>
+                    <td></td>
+                    <td>2:00PM - 3:30PM</td>
+                    <td>Siciid</td>
+
+                </tr>
+
+                <tr>
+                    <td>Yoga Training Class</td>
+                    <td></td>
+                    <td></td>
+                    <td>Cumar</td>
+                </tr>
+
+
+                <tr>
+                    <td>Advanced Training</td>
+                    <td></td>
+                    <td></td>
+                    <td>Cismaan</td>
+                </tr>
+
+
+
+            </table>
+        </div>
+    </div>
+    <!--  -->
+
+    <div class="table-info-guudi-tab">
+        <div class="info-tab cont">
+            <h2>Classes <span>Schedule</span></h2>
+            <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+                alt="">
+            <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra <br> ipsum dolor, ultricies
+                fermentum massa consequat eu.</p>
+
+            <div class="days-tab">
+
+                <span id="sabti"> Sabti </span>
+                <span class="day">/</span>
+                <span class="day">Axad </span>
+                <span class="day">/</span>
+                <span class="day">Isniin </span>
+                <span class="day">/</span>
+                <span class="day">Talaada </span>
+                <span class="day">/</span>
+                <span class="day">Khamiis</span>
+
+            </div>
+        </div>
+        <div class="dhabe-table-tab">
+            <table border="2">
+
+                <tr>
+                    <th>Fitness Class</th>
+                    <th>10:00AM - 11:30AM</th>
+                    <th></th>
+                    <th>Xudayfi</th>
+                </tr>
+
+                <tr>
+                    <td>Muscle Training</td>
+                    <td></td>
+                    <td></td>
+                    <td>Mohamed</td>
+
+                </tr>
+
+                <tr>
+
+
+                    <td>Body Building</td>
+                    <td></td>
+                    <td>2:00PM - 3:30PM</td>
+                    <td>Siciid</td>
+
+                </tr>
+
+                <tr>
+                    <td>Yoga Training Class</td>
+                    <td></td>
+                    <td></td>
+                    <td>Cumar</td>
+                </tr>
+
+
+                <tr>
+                    <td>Advanced Training</td>
+                    <td></td>
+                    <td></td>
+                    <td>Cismaan</td>
+                </tr>
+
+
+
+            </table>
+        </div>
+    </div>
+
+    <!--  -->
+
+
+
+
+    <div class="table-info-guud-t">
+        <div class="info-t cont">
+            <h2>Classes <span>Schedule</span></h2>
+            <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png" alt=""
+                id="hg">
+            <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra <br> ipsum dolor, ultricies
+                fermentum massa consequat eu.</p>
+
+            <div class="days-t">
+
+                <span id="sabti"> Sabti </span>
+                <span class="day">/</span>
+                <span class="day">Axad </span>
+                <span class="day">/</span>
+                <span class="day">Isniin </span>
+                <span class="day">/</span>
+                <span class="day">Talaada </span>
+                <span class="day">/</span>
+                <span class="day">Khamiis</span>
+
+            </div>
+        </div>
+        <div class="dhab-table-t cont">
+            <table border="">
+
+                <tr>
+                    <th>Fitness Class</th>
+                    <th>10:00AM - 11:30AM</th>
+                    <th></th>
+                    <th>Xudayfi</th>
+                </tr>
+
+                <tr>
+                    <td>Muscle Training</td>
+                    <td></td>
+                    <td></td>
+                    <td>Mohamed</td>
+
+                </tr>
+
+                <tr>
+
+
+                    <td>Body Building</td>
+                    <td></td>
+                    <td>2:00PM - 3:30PM</td>
+                    <td>Siciid</td>
+
+                </tr>
+
+                <tr>
+                    <td>Yoga Training Class</td>
+                    <td></td>
+                    <td></td>
+                    <td>Cumar</td>
+                </tr>
+
+
+                <tr>
+                    <td>Advanced Training</td>
+                    <td></td>
+                    <td></td>
+                    <td>Cismaan</td>
+                </tr>
+
+
+
+            </table>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="cont exp-cont">
+        <h1>Expert <span>Trainers</span></h1>
+        <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png" alt="">
+        <p class="p">Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra <br> ipsum dolor,
+            ultricies
+            fermentum
+            massa consequat eu.</p>
+
+
+    </div>
+
+    <!--  -->
+
+
+    <div class="profile cont">
+
+        <div class="role-profile">
+            <img src="https://images.unsplash.com/photo-1673093766907-3dc02ee44eab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bSUyMG1hbiUyMG11c2xpbXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="">
+            <h5 class="a-prof">Muscle Trainer</h5>
+            <h3>Hector T. Daigl</h3>
+            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key
+                pour-over<br>seitan flannel.</p>
+
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+        </div>
+
+
+        <div class="role-profile">
+            <img src="https://images.unsplash.com/photo-1584952449180-f8fddc0b03a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3ltJTIwbWFuJTIwbXVzbGltfGVufDB8fDB8fHww"
+                alt="" srcset="">
+
+            <h5 class="a-prof">Muscle Trainer</h5>
+            <h3>Hector T. Daigl</h3>
+            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key
+                pour-over<br>seitan flannel.</p>
+
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+        </div>
+
+
+        <div class="role-profile">
+            <img src="https://images.unsplash.com/photo-1628025517945-0ee233ee8c97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bSUyMG1hbiUyMG11c2xpbXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="">
+
+            <h5 class="a-prof">Muscle Trainer</h5>
+            <h3>Hector T. Daigl</h3>
+            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key
+                pour-over<br>seitan flannel.</p>
+
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- profile-mob -->
+    <div class="profile-mob cont">
+
+        <div class="role-profile-mob">
+            <img src="https://images.unsplash.com/photo-1673093766907-3dc02ee44eab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bSUyMG1hbiUyMG11c2xpbXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="" class="img-role-mob">
+
+            <h5 class="a-prof">Muscle Trainer</h5>
+            <h3>Hector T. Daigl</h3>
+            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key
+                pour-overseitan flannel.</p>
+
+            <div class="social-mob">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+        </div>
+        <div class="role-profile-mob">
+            <img src="https://images.unsplash.com/photo-1673093766907-3dc02ee44eab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bSUyMG1hbiUyMG11c2xpbXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="" class="img-role-mob">
+
+            <h5 class="a-prof">Muscle Trainer</h5>
+            <h3>Hector T. Daigl</h3>
+            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key
+                pour-overseitan flannel.</p>
+
+            <div class="social-mob">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+        </div>
+        <div class="role-profile-mob">
+            <img src="https://images.unsplash.com/photo-1673093766907-3dc02ee44eab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bSUyMG1hbiUyMG11c2xpbXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="" class="img-role-mob">
+
+            <h5 class="a-prof">Muscle Trainer</h5>
+            <h3>Hector T. Daigl</h3>
+            <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key
+                pour-overseitan flannel.</p>
+
+            <div class="social-mob">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="profile-tab cont">
+
+        <div class="role-profile-tab cont">
+            <img src="/0b4fbe09a1bc4b91a1103cad88edb44e.jpg" alt="">
+
+            <h5 class="a-prof">Muscle Trainer</h5>
+            <h3>Hector T. Daigl</h3>
+            <p>Bitters cliche tattooed 8-bit distillery<br> mustache. Keytar succulents gluten-<br>free vegan church-key
+                pour-over<br>seitan flannel.</p>
+
+            <div class="social-mob">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+        </div>
+        <div class="role-profile-tab cont">
+            <img src="/0b4fbe09a1bc4b91a1103cad88edb44e.jpg" alt="">
+
+            <h5 class="a-prof">Muscle Trainer</h5>
+            <h3>Hector T. Daigl</h3>
+            <p>Bitters cliche tattooed 8-bit distillery<br> mustache. Keytar succulents gluten-<br>free vegan church-key
+                pour-over<br>seitan flannel.</p>
+
+            <div class="social-mob">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+        </div>
+
+
+        <div class="role-profile-tab cont">
+            <img src="/0b4fbe09a1bc4b91a1103cad88edb44e.jpg" alt="">
+
+            <h5 class="a-prof">Muscle Trainer</h5>
+            <h3>Hector T. Daigl</h3>
+            <p>Bitters cliche tattooed 8-bit distillery<br> mustache. Keytar succulents gluten-<br>free vegan church-key
+                pour-over<br>seitan flannel.</p>
+
+            <div class="social-mob">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="grid-map">
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31575.58954403561!2d48.468267648129135!3d8.40670016924835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d9dcf582a2bac5d%3A0x83fe5ba854ae5048!2sGarowe!5e0!3m2!1sen!2sso!4v1757313344754!5m2!1sen!2sso"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- diiwaan  -->
+
+        <div class="diiwaan">
+
+
+
+            <form action="" class="form-cont cont">
+
+                <input type="text" placeholder="Your Name" class="fifty-input fifty padding-input">
+
+
+                <input type="email" placeholder="Your Email" class="fifty-input2 fifty  padding-input"><br>
+
+                <input type="text" placeholder="Subject" class="boqoley  padding-input">
+
+                <textarea placeholder="Massege" id="input-mss" rows="15" cols="59"
+                    class="boqoley  padding-input"></textarea> <br>
+
+                <button id="btn"> SEND MESSAGE</button>
+
+
+            </form>
+
+        </div>
+    </div>
+    <!-- grid-map-mob -->
+
+    <div class="grid-map-mob">
+
+        <div class="map-mob">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31575.58954403561!2d48.468267648129135!3d8.40670016924835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d9dcf582a2bac5d%3A0x83fe5ba854ae5048!2sGarowe!5e0!3m2!1sen!2sso!4v1757313344754!5m2!1sen!2sso"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- diiwaan  -->
+
+    </div>
+
+    <!--  -->
+
+    <div class="diiwaan-mob">
+
+
+
+        <form action="" class="form-cont cont">
+
+            <input type="text" placeholder="Your Name" class="input-text"><br>
+            <input type="email" placeholder="Your Email" class="input-text"><br>
+
+            <input type="text" placeholder="Subject" class="input-text"><br>
+
+            <textarea placeholder="Massege" cols="" class="mss-input"></textarea> <br>
+
+            <button id="btn"> SEND MESSAGE</button>
+
+        </form>
+
+    </div>
+
+    <!--  -->
+
+    <div class="midaw-tab">
+        <div class="diiwaani-tab">
+
+
+
+            <form action="" class="formi-tab cont">
+
+                <input type="text" placeholder="Your Name" class="input-text"><br>
+                <input type="email" placeholder="Your Email" class="input-text"><br>
+
+                <input type="text" placeholder="Subject" class="input-text"><br>
+
+                <textarea placeholder="Massege" cols="" class="mss-input"></textarea> <br>
+
+                <button id="btn"> SEND MESSAGE</button>
+
+            </form>
+
+        </div>
+
+        <!--  -->
+        <div class="gridi-map-tab">
+
+            <div class="mapi-tab">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31575.58954403561!2d48.468267648129135!3d8.40670016924835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d9dcf582a2bac5d%3A0x83fe5ba854ae5048!2sGarowe!5e0!3m2!1sen!2sso!4v1757313344754!5m2!1sen!2sso"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+            <!-- diiwaan  -->
+
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="footers cont">
+        <p>Copyright © 2020 Training Studio - Designed by <span>Xudayfi</span></p>
+    </div>
+
+    <!--  -->
+
+    <script>
+
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector("#mobile-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            menu.classList.toggle("active");
+        });
+
+
+
+
+
+
+    </script>
+
+
+
+
+    <!--  -->
+
+</body>
+
+</html>
